@@ -1,0 +1,44 @@
+{
+  "id": "1720095",
+  "name": "TMall",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11249747",
+      "name": "hot",
+      "font_class": "hot",
+      "unicode": "e847",
+      "unicode_decimal": 59463
+    },
+    {
+      "icon_id": "681182",
+      "name": "new",
+      "font_class": "new",
+      "unicode": "e743",
+      "unicode_decimal": 59203
+    },
+    {
+      "icon_id": "702046",
+      "name": "cart",
+      "font_class": "cart",
+      "unicode": "e705",
+      "unicode_decimal": 59141
+    },
+    {
+      "icon_id": "1487394",
+      "name": "category",
+      "font_class": "category1",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "13074988",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    }
+  ]
+}

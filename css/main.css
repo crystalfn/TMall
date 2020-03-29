@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: 12px/1.5 "Microsoft YaHei", tahoma,arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;;
+}
+
+em {
+  font-style: normal;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

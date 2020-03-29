@@ -1,0 +1,282 @@
+/* nav 整体样式 */
+nav {
+  position: relative;
+  z-index: 99;
+  height: 32px;
+  min-width: 990px;
+  border-bottom: 1px solid #e5e5e5;
+  background: #f2f2f2;
+}
+
+.sn-container {
+  display: flex;
+  justify-content: space-between;
+  height: 32px;
+  width: 1230px;
+  margin: auto;
+  color: #999;
+}
+
+/* 左侧样式 */
+.sn-login-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 32px;
+  height: 32px;
+  width: 250px;
+}
+
+.sn-login-info a,
+.sn-login-info a:visited {
+  color: #999;
+}
+.sn-login-info a:hover {
+  color: #FF0036;
+}
+
+/* 右侧样式 */
+.sn-quick-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 右侧公共样式 */
+.sn-quick-menu>li {
+  position: relative;
+  text-align: center;
+  line-height: 32px;
+  height: 32px;
+  padding: 0 12px;
+}
+
+.sn-quick-menu li a,
+.sn-quick-menu li a:visited {
+  color: #999;
+}
+
+.iconfont {
+  color: #FF0036;
+  font-size: 12px;
+}
+
+/* 三角形 */
+.menu-item b {
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #999;
+  width: 0;
+  height: 0;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+.menu-item:hover .menu-hd {
+  text-decoration: underline;
+  color: #FF0036;
+}
+
+/* 三角形旋转 */
+.menu-item:hover b {
+  animation: rotate .3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.sn-menu {
+  display: none;
+}
+.menu-item:hover {
+  height: 33px;
+}
+.menu-item:hover .sn-menu {
+  display: block;
+  position: absolute;
+  z-index: 98;
+  left: -1px;
+  top: 33px;
+  padding: 8px 10px;
+  border: 1px solid #f2f2f2;
+  border-top: #fff;
+  width: 74px;
+}
+.menu-item:hover .sn-menu a:hover {
+  color: #FF0036;
+  text-decoration: underline;
+}
+
+/* 购物车、收藏夹、手机版、淘宝网 */
+.sn-cart .sn-cart-link:hover,
+.sn-mobile .sn-mobile-link:hover,
+.sn-home .sn-home-link:hover {
+  color: #FF0036;
+}
+
+/* 手机版二维码的显示 */
+.sn-qrcode {
+  display: none;
+}
+.sn-mobile:hover .sn-qrcode {
+  display: block;
+  position: absolute;
+  width: 175px;
+  height: 225px;
+  background: #fff;
+  left: -43px;
+  top: 30px;
+  box-shadow: 0 0 5px #aaa;
+}
+.sn-qrcode-content {
+  width: 175px;
+  height: 175px;
+  margin: 5px 0;
+  background: url(../img/nav/qrcode.png) no-repeat;
+}
+.sn-qrcode p {
+  /* 隐藏字体 */
+  text-indent: -9999px;
+  width: 175px;
+  height: 175px;
+  margin: 0 15px;
+  overflow: hidden;
+  background: url(../img/nav/qucodeBottom.png) no-repeat;
+}
+/* 小三角 */
+.sn-qrcode b {
+  position: absolute;
+  left: 80px;
+  top: -8px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #fff;
+}
+
+/* 分割线 */
+.sn-quick-menu .sn-separator {
+  padding-left: 5px;
+  padding-right: 0;
+  color: #ccc;
+}
+
+/* 商家支持 */
+.sn-seller:hover .sn-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left: -68.5px;
+  width: 120px;
+}
+.sn-seller:hover .sn-menu li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-bottom: 1px dotted #999;
+  width: 100%;
+  padding: 5px 0;
+}
+.sn-seller:hover .sn-menu li a {
+  display: block;
+  width: 60px;
+  line-height: 22px;
+}
+.sn-seller:hover .sn-menu h3 {
+  color: #999;
+  font-weight: bold;
+  padding: 5px 0 0 5px;
+}
+
+/* 网站导航 */
+.sn-sitemap:hover .sn-menu {
+  position: absolute;
+  left: -1111px;
+  display: flex;
+  flex-direction: row;
+  width: 1198px;
+  height: 110px;
+  padding: 25px 0;
+}
+.sn-sitemap:hover .sn-menu>li {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.sn-sitemap:hover .site-hot, 
+.sn-sitemap:hover .site-market {
+  width: 465px;
+}
+.sn-sitemap:hover .site-help {
+  width: 196px;
+}
+.sn-sitemap:hover .site-market {
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+}
+/* 小标题样式 */
+.sn-sitemap:hover h2 {
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: '\5FAE\8F6F\96C5\9ED1',arial,"\5b8b\4f53";
+  text-align: left;
+}
+.site-hot h2 {
+  color: #f56a00;
+}
+.site-market h2 {
+  color: #2263d4;
+}
+.site-help h2 {
+  color: #666;
+}
+/* 小标签样式 */
+.sn-sitemap:hover .hot,
+.sn-sitemap:hover .market,
+.sn-sitemap:hover .help {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.sn-sitemap:hover .hot li,
+.sn-sitemap:hover .market li,
+.sn-sitemap:hover .help li {
+  position: relative;
+  text-align: left;
+  width: 91px;
+  margin: 5px 0;
+}
+.sn-sitemap:hover .hot a,
+.sn-sitemap:hover .market a,
+.sn-sitemap:hover .help a {
+  color: #666;
+}
+.sn-sitemap:hover .hot a:hover {
+  color: #f56a00;
+}
+.sn-sitemap:hover .market a:hover {
+  color: #2263d4;
+}
+.sn-sitemap:hover .help a:hover {
+  color: #666;
+}
+/* new and hot 小图标 */
+.sn-sitemap .sn-menu .iconfont {
+  position: absolute;
+  top: -7px;
+}
+.icon-new {
+  color: #00c100;
+}

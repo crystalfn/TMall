@@ -1,0 +1,47 @@
+header {
+  height: 130px;
+  width: 100%;
+}
+
+.header-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 130px;
+  width: 1230px;
+  min-width: 990px;
+  margin: auto;
+}
+
+.logo-con {
+  width: 350px;
+}
+.logo-con img {
+  height: 130px;
+  width: 240px;
+}
+
+.mall-search {
+  padding-top: 40px;
+}
+.combobox-input {
+  height: 26px;
+  width: 490px;
+  padding: 5px;
+  font: 14px/1.5 arial;
+  color: #666;
+  border: 2px solid #FF0036;
+}
+.combobox-botton {
+  position: absolute;
+  z-index: 97;
+  outline: none;
+  border: 0;
+  height: 40px;
+  width: 132px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  background-color: #FF0036;
+}

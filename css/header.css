@@ -32,6 +32,18 @@ header {
   color: #666;
   border: 2px solid #FF0036;
 }
+.combobox-input::placeholder {
+  color: #666;
+}
+.combobox-input:hover {
+  cursor: pointer;
+}
+.combobox-input:focus {
+  outline: none;
+}
+.combobox-input:focus::placeholder {
+  color: #ccc;
+}
 .combobox-botton {
   position: absolute;
   z-index: 97;

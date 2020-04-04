@@ -1,0 +1,35 @@
+.main-nav {
+  position: relative;
+  height: 35.5px;
+  width: 100%;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 0 0 1.5px 0;
+  border-color: #FF0036;
+}
+.inner-icon0 {
+  width: 1230px;
+  height: 36px;
+  margin: 0 auto;
+}
+.inner-icon1 {
+  display: flex;
+  width: 1030px;
+  height: 36px;
+  margin-left: 200px;
+}
+.main-nav a {
+  display: block;
+  padding: 0 8px;
+  color: #FF0036;
+  font-size: 16px;
+  line-height: 36px;
+}
+.main-nav a:hover {
+  opacity: 0.8;
+}
+.main-nav img {
+  display: block;
+  margin-top: 3px;
+  height: 30px;
+}

@@ -21,12 +21,12 @@
 .main-nav a {
   display: block;
   padding: 0 8px;
-  color: #FF0036;
+  color: #333;
   font-size: 16px;
   line-height: 36px;
 }
 .main-nav a:hover {
-  opacity: 0.8;
+  color: #FF0036;
 }
 .main-nav img {
   display: block;

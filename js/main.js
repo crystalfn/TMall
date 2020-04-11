@@ -18,7 +18,7 @@ function DOMReady(fn) {
 	}
 	//IE 浏览器模拟 DOMContentLoaded
 	function IEContentLoaded(fn) {
-		var isDone = false;
+		let isDone = false;
 		//确保fn只执行一次
 		function init() {
 			if (!isDone) {
@@ -76,10 +76,18 @@ function getByClass(parent, classname) {
 	} else if (document.querySelectorAll) {
 		return parent.querySelectorAll('.' + classname);
 	} else {
-		var elems = parent.getElementsByTagName('*');
-		var result = [];
-		var re = new RegExp('\\b' + classname + '\\b', 'i');
-		for (var i = 0; i < elems.length; i++) {
+		/**
+		 * parent.getElementsByTagName('*') 表示获取 parent 下所有标签的集合
+		 */
+		let elems = parent.getElementsByTagName('*');
+		let result = [];
+		/**
+		 * \\ 是转义,表示一个斜杠
+		 * \\b 就是正常的 \b 在正则里表示单词的边界位置
+		 * 给的参数 ig 的意思是 g 是 global 全局搜索 i 是 ignore case 忽略大小写
+		 */
+		let re = new RegExp('\\b' + classname + '\\b', 'i');
+		for (let i = 0; i < elems.length; i++) {
 			if (re.test(elems[i].className)) {
 				result.push(elems[i]);
 			}
@@ -153,12 +161,21 @@ function removeHandler(obj, type, handler) {
  * @param  {string} attr 需要获取的样式名
  * @return {string}      获取到的样式值
  */
+/**
+ * JS获取CSS样式的三种方式
+ * 第一种获取非行间的样式: 使用 getComputedStyle 与 currentStyle 属性获取样式，如此处
+ * 第二种获取行内样式：直接使用dom对象进行访问
+ * 	let dom = docment.getElementById('div');
+		let attr = dom.style.height
+		dom.style.height = 111+'px';
+ * 第三种：obj.offsetAttr
+ */
 function getStyle(obj, attr) {
-	return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj)[attr];
+	return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj, false)[attr];
 }
 
 /**
- * 动画函数
+ * 动画函数，实现动画效果，使变化不会太突兀
  * @param  {object} obj   需要添加动画的对象
  * @param  {json} json    JSON数据,名为attr,值为iTarget.
  * @param  {int} n        速度因子，控制速度
@@ -166,14 +183,18 @@ function getStyle(obj, attr) {
  * 
  */
 function doMove(obj, json, n, endFn) {
+	/**
+	 * setInterval()： 间隔指定的毫秒数不停地执行指定的代码，定时器
+	 * clearInterval()： 用于停止 setInterval() 方法执行的函数代码
+	 */
 	clearInterval(obj.timer);
-	var iValue = 0;
-	var iSpeed = 0;
-	var iOffset = 0;
-	obj.timer = setInterval(function() {
-		var isStop = true;
-		for (var attr in json) {
-			var iTarget = json[attr];
+	let iValue = 0;
+	let iSpeed = 0;
+	let iOffset = 0;
+	obj.timer = setInterval(function () {
+		let isStop = true;
+		for (let attr in json) {
+			let iTarget = json[attr];
 
 			if (attr == 'opacity') {
 				iValue = parseInt(parseFloat(getStyle(obj, attr)) * 100);
@@ -181,6 +202,7 @@ function doMove(obj, json, n, endFn) {
 				iValue = parseInt(getStyle(obj, attr));
 			}
 
+			// 实现过渡变化
 			iSpeed = (iTarget - iValue) / n;
 			iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
 			iOffset = iValue + iSpeed;

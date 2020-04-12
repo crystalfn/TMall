@@ -1,7 +1,6 @@
 /* category 整体 */
 .category {
   position: relative;
-  z-index: 30;
   width: 1230px;
   margin: 0 auto;
 }
@@ -33,6 +32,8 @@
 
 /* 导航 nav 样式 */
 .category-tab-content {
+  position: absolute;
+  z-index: 30;
   width: 200px;
 }
 #normal-nav {
@@ -63,10 +64,10 @@
 /* categoryContent 样式 */
 #category-content {
   position: absolute;
+  z-index: 30;
   height: 500px;
   top: 0;
   left: 0;
-  z-index: 30;
 }
 .cg-content {
   display: none;

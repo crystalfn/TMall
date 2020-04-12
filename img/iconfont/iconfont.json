@@ -6,6 +6,132 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1315792",
+      "name": "car",
+      "font_class": "car",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "237725",
+      "name": "more",
+      "font_class": "more",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "1485497",
+      "name": "more",
+      "font_class": "more-copy-right",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "583053",
+      "name": "medicine",
+      "font_class": "medicine",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    },
+    {
+      "icon_id": "586844",
+      "name": "diamond",
+      "font_class": "diamond",
+      "unicode": "e6fe",
+      "unicode_decimal": 59134
+    },
+    {
+      "icon_id": "1602606",
+      "name": "furniture",
+      "font_class": "furniture",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "1814152",
+      "name": "dress",
+      "font_class": "dress",
+      "unicode": "e7f1",
+      "unicode_decimal": 59377
+    },
+    {
+      "icon_id": "1923942",
+      "name": "noodles",
+      "font_class": "noodles",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "2629948",
+      "name": "cup",
+      "font_class": "cup",
+      "unicode": "e82c",
+      "unicode_decimal": 59436
+    },
+    {
+      "icon_id": "4084680",
+      "name": "furniture n",
+      "font_class": "furnituren",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "5407046",
+      "name": "lipstick",
+      "font_class": "lipstick",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "5504194",
+      "name": "shirt",
+      "font_class": "shirt",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "10563948",
+      "name": "Boot",
+      "font_class": "Boot",
+      "unicode": "e6ea",
+      "unicode_decimal": 59114
+    },
+    {
+      "icon_id": "12386611",
+      "name": "cherry",
+      "font_class": "cherry",
+      "unicode": "e74d",
+      "unicode_decimal": 59213
+    },
+    {
+      "icon_id": "12555222",
+      "name": "Mobilephone",
+      "font_class": "Mobilephone",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "13466427",
+      "name": "baby-carriage",
+      "font_class": "baby-carriage",
+      "unicode": "eab8",
+      "unicode_decimal": 60088
+    },
+    {
+      "icon_id": "13539136",
+      "name": "refrigerator",
+      "font_class": "refrigerator",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "13823627",
+      "name": "books",
+      "font_class": "books",
+      "unicode": "e9c5",
+      "unicode_decimal": 59845
+    },
+    {
       "icon_id": "11249747",
       "name": "hot",
       "font_class": "hot",

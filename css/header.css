@@ -15,6 +15,7 @@ header {
 
 .logo-con {
   width: 350px;
+  margin-left: -20px;
 }
 .logo-con img {
   height: 130px;

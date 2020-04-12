@@ -1,0 +1,149 @@
+/* category 整体 */
+.category {
+  position: relative;
+  z-index: 30;
+  width: 1230px;
+  margin: 0 auto;
+}
+
+/* 商品分类样式 */
+.category-title {
+  position: absolute;
+  z-index: 30;
+  top: -36px;
+  left: 0;
+  width: 200px;
+}
+.category-type {
+  display: flex;
+  height: 36px;
+  color: #fff;
+  background-color: #FF0036;
+}
+.category-type .iconfont {
+  margin: 5px 14px;
+  font-size: 16px;
+  color: #fff;
+}
+.category-type .text {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 导航 nav 样式 */
+.category-tab-content {
+  width: 200px;
+}
+#normal-nav {
+  width: 200px;
+  height: 500px;
+  background-color: rgba(0,0,0,.55);
+}
+.nav-item {
+  position: relative;
+  height: 31.2px;
+  line-height: 31.2px;
+  color: #fff;
+  font-size: 14px;
+}
+.nav-item i {
+  margin: 0 4px 0 14px;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.5;
+}
+.nav-item a {
+  height: 31.2px;
+  line-height: 31.2px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* categoryContent 样式 */
+#category-content {
+  position: absolute;
+  height: 500px;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+.cg-content {
+  display: none;
+  height: 500px;
+  width: 852px;  
+  left: 200px; 
+  position: absolute;
+  background-color: #fff;
+}
+/* categoryContent 左侧内容 */
+.hot-word-con {
+  width: 583px;
+  height: 462px;
+  margin: 19px 30px;
+  background-color: #fff;
+}
+.hot-word-line {
+  display: flex;
+}
+/* title 样式 */
+.line-title {
+  display: flex;
+  position: relative;
+  margin-right: 10px;
+  width: 90px;
+  height: 22px;
+  color: #333;
+}
+.title-text {
+  width: 60px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #333;
+  text-align: justify;
+}
+/* 处理 text-align: justify; 不起作用*/
+.title-text:after {
+  content:"";
+  display:inline-block;
+  width:100%;
+}
+.line-title .iconfont {
+  display: block;
+  margin: 3px;
+  color: #333;
+}
+/* hot-word-line 样式 */
+.line-con {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 11px;
+  margin-bottom: 11px;
+  width: 490px;
+  border-bottom: 1px dashed #f2f2f2;
+}
+.hot-word-line:last-child .line-con {
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  border-bottom: 0;
+}
+.line-con .hot-word {
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #666;
+  margin-left: 13px;
+}
+
+/* categoryContent 右侧 logo */
+.hot-logo {
+  background-color: #FAFAFA;
+  width: 189px;
+  padding: 10px;
+  height: 480px;
+}
+.cg-img {
+  width: 189px;
+  height: 87px;
+}

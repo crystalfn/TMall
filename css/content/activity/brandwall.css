@@ -1,0 +1,76 @@
+.brandwall-con {
+  position: relative;
+  margin: auto;
+  padding-top: 24px;
+  width: 1230px;
+}
+
+.module-body {
+  display: flex;
+}
+
+.brandwall-item {
+  width: 485px;
+  height: 370px;
+  margin-right: 13px;
+}
+
+.head {
+  position: relative;
+  height: 54px;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 0 0 1px;
+  border-color: #eee;
+}
+.head .cn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  line-height: 54px;
+  height: 18px;
+  margin-left: 10px;
+}
+.head .en {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin-left: 10px;
+  line-height: 24px;
+  height: 44px;
+}
+
+.head .more {
+  position: absolute;
+  z-index: 10;
+  right: 14px;
+  font-size: 16px;
+  line-height: 54px;
+  color: #666;
+}
+.head .more i {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #666;
+}
+
+.body {
+  display: block;
+  height: 316px;
+}
+.body:hover {
+  opacity: 0.7;
+}
+.body img {
+  height: 316px;
+  width: 485px;
+}
+
+.brandwall-item:first-child {
+  width: 234px;
+}
+.brandwall-item:first-child img {
+  width: 234px;
+}

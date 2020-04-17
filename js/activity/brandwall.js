@@ -2,17 +2,17 @@ let data = [
   {
     "cName": "品牌闪购",
     "eName": "BRAND SALE",
-    "picture": "../../img/content/activity/brandwall/1.webp"
+    "picture": "../img/content/activity/brandwall/1.webp"
   },
   {
     "cName": "聚名品",
     "eName": "LUXURY CHANNEL",
-    "picture": "../../img/content/activity/brandwall/2.webp"
+    "picture": "../img/content/activity/brandwall/2.webp"
   },
   {
     "cName": "品牌活动",
     "eName": "BRAND ACTIVITY",
-    "picture": "../../img/content/activity/brandwall/3.webp"
+    "picture": "../img/content/activity/brandwall/3.webp"
   },
 ];
 

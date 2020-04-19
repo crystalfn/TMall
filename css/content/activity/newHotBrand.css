@@ -1,0 +1,158 @@
+.new-hot-brand-con {
+  position: relative;
+  margin: 15px auto 0;
+  width: 1230px;
+}
+
+.new-hot-brand-con .module-body {
+  height: 327px;
+  width: 100%;
+}
+
+.brand-item-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brand-item {
+  position: relative;
+  width: 122px;
+  height: 108px;
+  margin-right: 1px;
+  margin-bottom: 1px;
+}
+
+/* 底图样式 */
+.brand-img {
+  text-align: center;
+  line-height: 108px;
+  background-color: #fff;
+}
+.brand-img img {
+  width: 82%;
+  height: 50px;
+  vertical-align: middle;
+}
+
+/* maks 样式 */
+.brand-item .brand-mask {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,.8);
+  transition: all .3s ease-out;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.brand-item .brand-mask:hover {
+  opacity: 1;
+}
+.coupon {
+  display: block;
+  color: #fff;
+  height: 60px;
+  line-height: 90px;
+  padding: 0 5px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.enter {
+  display: block;
+  margin: auto;
+  text-align: center;
+  height: 18px;
+  width: 63px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: #FF0036;
+  border-radius: 9px; 
+}
+
+/* fresh btn */
+.brand-fresh {
+  position: absolute;
+  z-index: 1;
+  bottom: 1px;
+  right: 1px;
+  width: 122px;
+  height: 108px;
+  background-color: #fff;
+}
+.fresh-con {
+  display: block;
+  width: 122px;
+  height: 108px;
+  color: #999;
+  text-align: center;
+}
+.icon-rotate {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -30px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 42px;
+  color: #999;
+}
+.fresh-con .btn-text {
+  display: block;
+  font-size: 14px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+/* fresh 悬浮效果 */
+.fresh-con:hover {
+  background-color: #FF0036;
+  color: #fff;
+}
+.fresh-con:hover .icon-rotate {
+  animation: freshHoverRotate .5s;
+  animation-fill-mode : forwards;
+  color: #fff;
+}
+@keyframes freshHoverRotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+/* fresh 点击效果 */
+.fresh-con:active .icon-rotate {
+  animation: freshActiveRotate 1s;
+  animation-fill-mode : forwards;
+  color: #fff;
+}
+@keyframes freshActiveRotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.brand-item-active {
+  animation: brandItemActiveRotate 1s ease-out 0s;
+  animation-fill-mode : forwards;
+  color: #fff;
+}
+@keyframes brandItemActiveRotate {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

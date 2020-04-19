@@ -5,8 +5,9 @@
   width: 1230px;
 }
 
-.module-body {
+.brandwall-con .module-body {
   display: flex;
+  height: 370px;
 }
 
 .brandwall-item {

@@ -1,4 +1,4 @@
-let data = [
+let brandwallData = [
   {
     "cName": "品牌闪购",
     "eName": "BRAND SALE",
@@ -18,20 +18,20 @@ let data = [
 
 let activity = getById("activity");
 let brandwallCon = getByClass(activity, "brandwall-con")[0];
-let moduleBody = document.createElement("div");
-moduleBody.className = "module-body";
+let brandwallModuleBody = document.createElement("div");
+brandwallModuleBody.className = "module-body";
 
-for (let i = 0; i < data.length; i++) {
+for (let i = 0; i < brandwallData.length; i++) {
   let brandwallItem = document.createElement("div");
   brandwallItem.className = "brandwall-item";
   let head = document.createElement("div");
   head.className = "head";
   let cn = document.createElement("span");
   cn.className = "cn";
-  cn.innerText = data[i].cName;
+  cn.innerText = brandwallData[i].cName;
   let en = document.createElement("span");
   en.className = "en";
-  en.innerText = data[i].eName;
+  en.innerText = brandwallData[i].eName;
   let more = document.createElement("a");
   more.className = "more";
   if (i > 0) {
@@ -46,12 +46,12 @@ for (let i = 0; i < data.length; i++) {
   let body = document.createElement("a");
   body.className = "body";
   let img = document.createElement("img");
-  img.src = data[i].picture;
+  img.src = brandwallData[i].picture;
   body.appendChild(img);
 
   brandwallItem.appendChild(head);
   brandwallItem.appendChild(body);
-  moduleBody.appendChild(brandwallItem);
+  brandwallModuleBody.appendChild(brandwallItem);
 }
 
-brandwallCon.appendChild(moduleBody);
+brandwallCon.appendChild(brandwallModuleBody);

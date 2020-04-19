@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "12486926",
+      "name": "rotate",
+      "font_class": "rotate",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
+      "icon_id": "592274",
+      "name": "heart",
+      "font_class": "heart",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
       "icon_id": "1315792",
       "name": "car",
       "font_class": "car",
